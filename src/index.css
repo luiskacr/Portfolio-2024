@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overscroll-behavior: none;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+#animate-area {
+    background-image: url(/sky.png);
+    width: 100%;
+    height: 100%;
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: animatedBackground 30s linear infinite alternate;
+}
+
+@media (min-width: 640px) {
+    #animate-area{
+        animation: animatedBackground 25s linear infinite alternate;
+    }
+}
+
+@media (min-width: 768px) {
+    #animate-area{
+        animation: animatedBackground 20s linear infinite alternate;
+    }
+}
+
+@media (min-width: 1024px) {
+    #animate-area{
+        animation: animatedBackground 15s linear infinite alternate;
+    }
+}
+
+@media (min-width: 1280px)  {
+    #animate-area{
+        animation: animatedBackground 10s linear infinite alternate;
+    }
+}
+
+@media (min-width: 1536px)  {
+    #animate-area{
+        animation: animatedBackground 5s linear infinite alternate;
+    }
+}
+
+
+
+@keyframes animatedBackgroundVertical {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 100%;
+    }
+}
+
+.animate-area-vertical {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/sky.png);
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: animatedBackgroundVertical 20s linear infinite alternate;
+}
+
+.filter-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out; 
+    transition-delay: 0s, 0.4s;
+}
+  
+.filter-dropdown-open {
+    padding: 0.75rem;
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
