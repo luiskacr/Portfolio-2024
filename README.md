@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+<h2 align="center">Personal Portfolio</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This repository hosts a collection of projects I've developed throughout my career as a software developer. From interactive web applications to machine learning projects, my portfolio showcases a wide range of skills and expertise in various technological areas.
 
-Currently, two official plugins are available:
+#### Website: [Link](#)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Portfolio image](./public/portfolio.png)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Table of  Contents
+- [Features](#fatures)
+- [Technologies](#technologies)
+- [Installation](#installation)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Features
+- About Me: A brief introduction of who I am.
+- Work Experience: A timeline of previous work experience.
+- Technical Skill: A list of my technical skills.
+- Projects: A collection of projects in which I have collaborated with their screenshots and descriptions of each one. 
+- Contact: 
+
+## Technologies 
+- HTML
+- CSS3
+- Javascript
+- React.js
+- Git
+- Github
+
+## Installation
+To get started with the portfolio application, follow these steps:
+
+1. Clone the Repository:
+```bash
+git clone https://github.com/luiskacr/Portfolio-2024.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the Project Directory:
+```bash
+cd Portfolio-2024
+```
+
+3. Install Dependencies:
+```bash
+npm install
+```
+
+4. Start the Development Server:
+```bash
+npm run dev
+```
+5. Open the Application:
+Once the development server is running, open your web browser and navigate to http://localhost:5173 to view the portfolio.
+
