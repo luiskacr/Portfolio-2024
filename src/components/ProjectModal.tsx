@@ -48,7 +48,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                         <div className="text-center mt-4">
                             <h3 className="p-4 text-2xl lg:text-4xl font-bold text-gray-900 dark:text-white">{project.title }</h3>       
                         </div>
-                        <div className="mt-6 flex flex-wrap justify-center gap-2 items-center text-sm ">
+                        <div className="mt-6 p-4 md:p-2 flex flex-wrap justify-center gap-2 items-center text-sm ">
                             {
                                 project.pills.map((pills:Pills, i: number)=> (
                                     <PillsComponent key={i} index={i} >

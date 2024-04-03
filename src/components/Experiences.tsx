@@ -10,7 +10,7 @@ export const Experiences = () => {
         <section className="mt-24">
             <div className="flex items-center justify-center text-3xl mb-4">
                 <FaBriefcase />
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold px-3"> 
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold px-3 dark:text-white"> 
                     <TranslateText text="experience"/>
                 </h2>
             </div>  

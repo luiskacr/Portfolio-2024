@@ -13,6 +13,10 @@ export const SKILLS:Skills[] = [
                 icon:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
             },
             {
+                name:'React',
+                icon:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+            },
+            {
                 name:'Bootstrap',
                 icon:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',
             },
@@ -20,10 +24,6 @@ export const SKILLS:Skills[] = [
                 name:'Tailwind CSS',
                 icon:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
             },          
-            {
-                name:'React',
-                icon:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-            },
         ]
     },
     {

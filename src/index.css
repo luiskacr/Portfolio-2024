@@ -22,38 +22,45 @@ body{
     height: 100%;
     background-position: 0px 0px;
     background-repeat: repeat;
-    animation: animatedBackground 30s linear infinite alternate;
+    animation: animatedBackground 75s linear infinite alternate;
 }
 
 @media (min-width: 640px) {
     #animate-area{
-        animation: animatedBackground 25s linear infinite alternate;
+        animation: animatedBackground 60s linear infinite alternate;
     }
 }
 
 @media (min-width: 768px) {
     #animate-area{
-        animation: animatedBackground 20s linear infinite alternate;
+        animation: animatedBackground 30s linear infinite alternate;
     }
 }
 
 @media (min-width: 1024px) {
     #animate-area{
-        animation: animatedBackground 15s linear infinite alternate;
+        animation: animatedBackground 25s linear infinite alternate;
     }
 }
 
 @media (min-width: 1280px)  {
     #animate-area{
-        animation: animatedBackground 10s linear infinite alternate;
+        animation: animatedBackground 35s linear infinite alternate;
     }
 }
 
 @media (min-width: 1536px)  {
     #animate-area{
+        animation: animatedBackground 25s linear infinite alternate;
+    }
+}
+
+@media (min-width: 1915px)  {
+    #animate-area{
         animation: animatedBackground 5s linear infinite alternate;
     }
 }
+
 
 
 

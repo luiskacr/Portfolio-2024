@@ -15,6 +15,7 @@ export interface BadgeProps {
 
 export interface PillsProps {
     children: ReactNode;
+    addClass?:string;
     index: string|number;
 }
 
@@ -74,6 +75,7 @@ export interface Projects{
 export interface Images{
     url:string;
     alt:string;
+    type?:string
 }
 
 export interface Pills{

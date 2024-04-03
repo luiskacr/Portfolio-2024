@@ -1,4 +1,4 @@
-<h2 align="center">Personal Portfolio</h2>
+<h1 align="center">Personal Portfolio</h1>
 
 Welcome to my personal portfolio! This repository hosts a collection of projects I've developed throughout my career as a software developer. From interactive web applications to machine learning projects, my portfolio showcases a wide range of skills and expertise in various technological areas.
 

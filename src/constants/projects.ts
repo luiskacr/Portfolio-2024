@@ -2,12 +2,12 @@ import { Projects } from "../interfaces";
 
 export const PROJECTS: Projects[] = [
     {
-      title: 'Transucoop',
+      title: 'Transucoop Web App',
       description: 'des_transucoop',
-      technical: '',
+      technical: 'tec_transucoop',
       images: [
         {
-          url: './projects/transucoop1.webp',
+          url: './images/projects/transucoop1.webp',
           alt: 'Login',
         }
       ],
@@ -39,9 +39,9 @@ export const PROJECTS: Projects[] = [
       ]
     },
     {
-      title: 'Equigax',
-      description: '',
-      technical: '',
+      title: 'Equigax integration',
+      description: 'des_equigax',
+      technical: 'tec_equigax',
       images: [
         {
           url: '',
@@ -70,12 +70,12 @@ export const PROJECTS: Projects[] = [
       ]
     },
     {
-      title: 'Jungle Life',
-      description: '',
+      title: 'Jungle Life App',
+      description: 'des_jungle',
       technical: '',
       images: [
         {
-          url: './projects/junglelife1.webp',
+          url: './images/projects/junglelife1.webp',
           alt: 'Login',
         }
       ],
@@ -137,9 +137,6 @@ export const PROJECTS: Projects[] = [
           title: 'Laravel',
         },
         {
-          title: 'Backpack',
-        },
-        {
           title: 'My SQL',
         },
       ]
@@ -175,8 +172,9 @@ export const PROJECTS: Projects[] = [
       technical: '',
       images: [
         {
-          url: '',
+          url: './images/projects/bamboo.webm',
           alt: 'Login',
+          type:'video'
         }
       ],
       pills: [

@@ -54,7 +54,7 @@ export  function Header() {
                                 className={`block py-2 px-3 rounded text-gray-900 text-xl  md:hover:bg-transparent hover:bg-gray-100  hover:animate-pop
                                 md:hover:text-blue-700 md:p-0 md:dark:hover:text-yonder-blue-400 dark:text-white dark:hover:bg-gray-700
                                  dark:hover:text-white md:dark:hover:bg-transparent
-                                 ${ location.pathname === navItem.url ? 'dark:border-b-4 dark:border-solid dark:border-yonder-blue-400/80' : '' }`}
+                                 ${ location.pathname === navItem.url ? 'dark:border-b-4 dark:border-solid dark:text-yonder-blue-400 dark:border-yonder-blue-400/80' : '' }`}
                               >
                                 <TranslateText text={navItem.label} />
                             </NavLink>

@@ -22,12 +22,18 @@ export const Carrusel:React.FC<CarruselProps> = ({ images })  => {
           <div className={`flex transition ease-out duration-40`} style={{transform: `translateX(-${current * 100}%)`}}>
             {
                 images.map((image, index:number) => {
-                    return <img key={index} className="h-auto w-3/4 mx-auto aspect-[4/3] rounded-lg" src={image.url} alt={image.alt} />;
+                    if(image.type === 'video'){
+                        return <video  key={index}  className="h-auto w-3/4 mx-auto aspect-[4/3] rounded-lg" autoPlay muted loop >
+                          <source src={image.url} type="video/mp4"/>
+                        </video>
+                    }else{
+                      return <img key={index} className="h-auto w-3/4 mx-auto aspect-[4/3] rounded-lg" src={image.url} alt={image.alt} />;
+                    }
                 })
             }
           </div>
-    
-          <div className="absolute top-0 h-full w-full justify-between items-center flex  px-10 text-3xl">
+
+          <div className="absolute top-0 h-full w-full justify-between items-center flex px-2  md:px-10 text-3xl">
             <button type="button" onClick={previousSlide} disabled={images.length === 1} 
                 className={`${images.length === 1 ? 'text-gray-500' : 'text-white'}`} >
               <BsFillArrowLeftCircleFill /> 

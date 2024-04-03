@@ -5,7 +5,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="rounded-lg shadow m-4">
+    <footer className=" rounded-lg shadow m-4">
       <div className="w-full mx-auto max-w-screen-xl p-4 flex flex-col items-center md:flex-row justify-center md:justify-between">
         <span className="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90 mb-6 md:mb-0 md:me-6 flex justify-center items-center text-white">
           © {currentYear} Made with  

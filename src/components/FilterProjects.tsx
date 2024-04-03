@@ -47,7 +47,7 @@ export const FilterProjects: React.FC<FilterComponentProps> = ({ filterProjects,
     return (
     <section className="flex items-center relative" >
         <div className="max-w-screen-xl px-4 mx-auto lg:px-12 w-full">  
-            <div className="relative shadow-md ">
+            <div className="relative  ">
                 <div className="flex flex-col items-center justify-between p-4 space-y-3 md:flex-row md:space-y-0 md:space-x-4">
                     <div className="w-full md:w-1/2">
                         <form className="flex items-center">
@@ -61,15 +61,22 @@ export const FilterProjects: React.FC<FilterComponentProps> = ({ filterProjects,
                                     </svg>
                                 </div>
                                 <input type="text" id="simple-search" className="block w-full p-2 pl-10 text-sm text-gray-900 border
-                                    border-gray-200 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500
+                                    border-gray-200 dark:border-gray-600  rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500
                                     dark:bg-gray-700 dark:bg-gray-900/90 dark:placeholder-gray-400 
-                                    dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" 
+                                    dark:text-white dark:focus:ring-yonder-blue-400 dark:focus:border-yonder-blue-400" 
                                     placeholder={t('search')} onChange={(e)=>filterProjects('input', e.target.value)} />
                             </div>
                         </form>
                     </div>
                     <div className="flex flex-col items-stretch justify-end flex-shrink-0 w-full space-y-2 md:w-auto md:flex-row md:space-y-0 md:items-center md:space-x-3">
                         <div className="flex items-center w-full space-x-3 md:w-auto" >
+                            <button id="filterReset" onClick={()=>handleFilterClick('')} ref={buttonRef} 
+                                className="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-900 bg-white border 
+                                border-gray-200 rounded-lg md:w-auto focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 
+                                focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-900/90 dark:text-gray-400 dark:border-gray-600 
+                                dark:hover:text-white dark:hover:bg-gray-700" type="button">
+                                    <TranslateText text='reset' />
+                            </button>  
                             <button id="filterDropdownButton" data-dropdown-toggle="filterDropdown" ref={buttonRef}  onClick={handleOpen}
                                 className="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-900 bg-white border 
                                 border-gray-200 rounded-lg md:w-auto focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 
