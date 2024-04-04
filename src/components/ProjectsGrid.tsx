@@ -66,14 +66,16 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ max , filter }) => {
                     <div key={index} id={index.toString()} onClick={() => handleProjectClick(project)}
                         className="col-span-1 rounded-xl border border-gray-700 shadow dark:bg-gray-800/30 relative " >
                         <div className="m-auto p-4 mb-4">
+                            <div className='w-90 h-70 aspect-[4/3] rounded-lg dark:shadow-lg dark:shadow-gray-800 border-1 dark:border-yonder-blue-300/10 
+                                bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/20 via-gray-500/20 to-black/5 flex items-center justify-center'> 
                             {
                                 project.images[0].type === 'video' 
-                                ?  <video className="w-90 h-70 aspect-[4/3] rounded-lg  dark:shadow-lg dark:shadow-gray-800 border-2 dark:border-yonder-blue-300/10" style={{objectFit:'cover'}} poster={project.images[0].alt} autoPlay muted loop >
+                                ? <video className="p-8  dark:drop-shadow-2xl " style={{objectFit:'cover'}} poster={project.images[0].alt} autoPlay muted loop >
                                     <source src={project.images[0].url} type="video/mp4"/>
                                 </video> 
-                                : <img className='w-90 h-70 aspect-[4/3] rounded-lg  dark:shadow-lg dark:shadow-gray-800 border-2 dark:border-yonder-blue-300/10' src={project.images[0].url} alt={project.images[0].alt} />
+                                : <img className='p-8  dark:drop-shadow-2xl' style={{objectFit:'cover'}} src={project.images[0].url} alt={project.images[0].alt} />
                             }
-                           
+                           </div>
                         </div>
                         <div className="text-center">
                             <h3 className="p-8 text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">{project.title}</h3>

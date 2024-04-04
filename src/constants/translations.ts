@@ -31,9 +31,18 @@ export const TRANSLATIONS = {
         filter: 'Filter',
         technologies:'Technologies',
         search : 'Search',
+        
         des_transucoop: 'The main purpose of the Package System is to facilitate and facilitate the entire life cycle of a package, from the request for shipment to the final delivery to the recipient, it contains control of customers, suppliers, drivers.',
         des_equigax:"The main objective of this application is to maintain almost real communication between an ERP and an E-Commerce through the synchronization of products, purchase orders and customers between both systems.",
         des_jungle: 'This is a reservation system that allows to keep track of the available space in the tours as well as to assign guides to reach the customer control and has a connection with Commerce to validate available spaces as well as to schedule reservations.',
+        des_delicias: 'A Web site for a food restaurant that allows customers to view the restaurant\'s menu and place orders online, allows users to make surveys, has an administrative panel to manage products and surveys. ',
+        des_bamboo: 'Human Resources system for the company Bamboo that is connected with Google Workspace, Jira and Slack that allows the synchronous creation of accounts on these platforms when a user is created in the system. It also allows you a control and history of candidates for jobs, in addition to when a job is created it shows it on the company\'s website as in LinkedIn.',
+        des_vshop: 'Website that allows you to show the vehicles for sale as well as to make a purchase through a reservation of the desired vehicle, this site has a powerful chat powered by artificial intelligence that allows the user to facilitate the search for your ideal vehicle.',
+        des_january: 'Web system that allows the credit control of a street sellers entrepreneurship, it is connected to the E-Commerce synchronizing the information of the products, it allows to have the control of the status of the credit.',
+
+        tec_transucoop: '',
+        tec_equigax: '',
+        tec_jungle: '',
     },
     /************ SPANISH **************/
     es:{
@@ -67,8 +76,17 @@ export const TRANSLATIONS = {
         filter: 'Filtro',
         technologies:'Tecnologías',
         search : 'Buscar',
+        
         des_transucoop: 'El propósito principal del Sistema de Paquetería es facilitar y agilizar todo el ciclo de vida de un paquete, desde la solicitud de envío hasta la entrega final al destinatario, contiene control de clientes, proveedores, choferes.',
         des_equigax: 'Esta aplicación tiene como objetivo principal en mantener comunicación casi real entre un ERP y un E-Commerce por medio de la sincronización de productos, ordenes de compra y clientes entre ambos sistemas.',
         des_jungle: 'Este es un Sistema de reservas permite llevar el control del espacio disponibles en los toures asi como asignar guías llegar el control de clientes y posee una conexión con el Commerce para validar espacios disponibles asi como agendar las reservas.',
+        des_delicias: 'Un sitio Web para un restaurante de comida que le permite a sus clientes ver el menu del restaurante, asi como realizar pedidos en linea, permite a los usuario hacer encuestas, posee un panel administrativo para gestionar los productos y las encuestas. ',
+        des_bamboo: 'Sistema de Recursos Humanos para la empresa Bamboo que se encuentra conectado con Google Workspace, Jira y Slack que permite la creación sincrónica de las cuentas en estas plataformas cuando se crea un usuario en el sistema. También le permite un control e historial de candidatos a los puestos de trabajo, ademas de cuando se crea un puesto de trabajo lo muestra en el sitio web de la empresa como en LinkedIn. ',
+        des_vshop: 'Sitio web que le permite mostrar los vehículos en venta asi como realizar compra por medio de una reserva del vehículo deseado, este sitio posee un poderoso chat impulsado con inteligencia artificial que le permite al usuario facilitar la búsqueda de su vehículo ideal.',
+        des_january: 'Sistema web que permite llevar el control de créditos de un emprendimiento de vendedores ambulantes, se encuentra conectado al E-Commerce sincronizando la información de los productos, permite tener el control del estado del crédito.',
+
+        tec_transucoop: '',
+        tec_equigax: '',
+        tec_jungle: '',
     }
 };

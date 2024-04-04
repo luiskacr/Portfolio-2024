@@ -23,11 +23,11 @@ export const Carrusel:React.FC<CarruselProps> = ({ images })  => {
             {
                 images.map((image, index:number) => {
                     if(image.type === 'video'){
-                        return <video  key={index}  className="h-auto w-3/4 mx-auto aspect-[4/3] rounded-lg" autoPlay muted loop >
+                        return <video  key={index}  className="h-auto mx-auto aspect-video rounded-lg" autoPlay muted loop >
                           <source src={image.url} type="video/mp4"/>
                         </video>
                     }else{
-                      return <img key={index} className="h-auto w-3/4 mx-auto aspect-[4/3] rounded-lg" src={image.url} alt={image.alt} />;
+                      return <img key={index} className="h-auto  mx-auto aspect-video rounded-lg"  src={image.url} alt={image.alt} />;
                     }
                 })
             }
@@ -35,11 +35,11 @@ export const Carrusel:React.FC<CarruselProps> = ({ images })  => {
 
           <div className="absolute top-0 h-full w-full justify-between items-center flex px-2  md:px-10 text-3xl">
             <button type="button" onClick={previousSlide} disabled={images.length === 1} 
-                className={`${images.length === 1 ? 'text-gray-500' : 'text-white'}`} >
+                className={`${images.length === 1 ? 'text-dark' : 'text-white'} rounded-full border-2 border-black/50 `} >
               <BsFillArrowLeftCircleFill /> 
             </button>
             <button type="button" onClick={nextSlide} disabled={images.length === 1} 
-                className={`${images.length === 1 ? 'text-gray-500' : 'text-white'}`} >
+                className={`${images.length === 1 ? 'text-dark' : 'text-white'} rounded-full border-2 border-black/50  `} >
               <BsFillArrowRightCircleFill />
             </button>
           </div>
@@ -48,7 +48,7 @@ export const Carrusel:React.FC<CarruselProps> = ({ images })  => {
             {images.map((_image, i) => {
               return (
                 <div onClick={() => { setCurrent(i);}} key={"circle" + i}
-                   className={`rounded-full w-5 h-5 cursor-pointer  ${ i == current ? "bg-white" : "bg-gray-500"}`}>  
+                   className={`rounded-full w-5 h-5 cursor-pointer shadow-sm shadow-black ${ i == current ? "bg-white" : "bg-gray-500"}`}>  
                 </div>
               );
             })}
