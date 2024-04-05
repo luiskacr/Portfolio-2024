@@ -16,8 +16,8 @@ export const Hero = () => {
 
     const downloadPdf = () => {
         const pdfUrl =  currentLanguage === 'es' 
-            ? "./public/pdf/CV_ES.pdf" 
-            : "./public/pdf/CV_EN.pdf";
+            ? "./pdf/CV_ES.pdf" 
+            : "./pdf/CV_EN.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = t('file');
