@@ -93,3 +93,7 @@ body{
     max-height: 1000px;
     transition: max-height 0.5s ease-in;
 }
+
+[type='checkbox']:checked, [type='radio']:checked, .dark [type='checkbox']:checked, .dark [type='radio']:checked {
+    background-color: #0285c7;
+}

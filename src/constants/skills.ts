@@ -148,13 +148,13 @@ export const SKILLS:Skills[] = [
             }          
         ]
     },
-    {
-        title:'BI',
-        technologies:[
-            {
-                name:'Git2',
-                icon:'',
-            },
-        ]
-    }
+    // {
+    //     title:'BI',
+    //     technologies:[
+    //         {
+    //             name:'Git2',
+    //             icon:'',
+    //         },
+    //     ]
+    // }
 ];

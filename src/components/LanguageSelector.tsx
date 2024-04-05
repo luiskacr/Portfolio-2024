@@ -23,7 +23,7 @@ export const LanguageSelector = () => {
     setLenguaje(lang_code)
     setIsOpen((isOpen) => !isOpen);
     i18n.changeLanguage(lang_code)
-    localStorage.setItem('lenguaje',lang_code )
+    localStorage.setItem('lenguaje', lang_code )
   }
   
   function toggle() {

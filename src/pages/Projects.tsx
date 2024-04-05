@@ -5,7 +5,7 @@ import { TranslateText } from "../components/TranslateText"
 export const Projects = () => {
     return <>
         <section className="pt-10 ">
-            <header className="flex items-center justify-center text-3xl mb-4">
+            <header className="flex items-center justify-center text-3xl mb-4 text-yonder-blue-600 dark:text-white" >
                 <FaCodeBranch />
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold px-3"> 
                     <TranslateText text="projects"/>

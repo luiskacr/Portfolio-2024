@@ -5,14 +5,14 @@ import { TranslateText } from './TranslateText';
 
 export const BentoSkills: React.FC = () => {
 
-    const boxStyle:string = "row-span-1 rounded-xl border border-gray-700 shadow dark:bg-gray-800/30 hover:scale-105 dark:hover:bg-gray-800/50 transition duration-500";
+    const boxStyle:string = "row-span-1 rounded-xl border border-gray-400 dark:border-gray-700 shadow bg-gray-200/30 dark:bg-gray-800/30 hover:scale-105 dark:hover:bg-gray-800/50 transition duration-500 shadow-2 shadow-black";
 
     return (
         <div className={`w-full grid lg:grid-cols-4 lg:auto-rows-[380px] gap-4 `}>
             {SKILLS.map((skill: Skills, index: number) => (
                 <div key={skill.title} id={skill.title} className={`${boxStyle} 
                     ${index === 0 || index === 4 || index === 5  || index === 6 ? "lg:col-span-2" : ""} 
-                    ${index === 2 ? "lg:row-span-2" : ""}` 
+                    ${index === 2 ? "lg:row-span-2" : "" } ` 
                 }>
                     <div className="text-center">
                         <h3 className="my-8 md:my-4 text-3xl  font-bold text-gray-900 dark:text-white sm:p-8 ">

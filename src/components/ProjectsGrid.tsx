@@ -6,6 +6,7 @@ import { ProjectModal } from './ProjectModal';
 import { TranslateText } from './TranslateText';
 import { FilterProjects } from './FilterProjects';
 import { MainButton } from './MainButton';
+import { TfiFaceSad } from 'react-icons/tfi';
 
 
 export const ProjectGrid: React.FC<ProjectGridProps> = ({ max , filter }) => {
@@ -57,8 +58,15 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ max , filter }) => {
             {showModal && selectedProject && (<ProjectModal project={selectedProject} onClose={handleCloseModal}/> )}
             
             {projects.length === 0 ? (
-            <div className="text-center text-gray-500 dark:text-gray-400 pt-16">
-                No se encontraron proyectos.
+            <div className="text-center text-yonder-blue-600 dark:text-white pt-16">
+                <div className="flex justify-center items-center flex-col">
+                    <div className="m-20 text-[20rem]">
+                        <TfiFaceSad />
+                    </div>
+                    <h3 className='text-5xl font-bold mb-10'>
+                        <TranslateText text='projects_not'/>
+                    </h3>
+                </div>
             </div>
             ) : (
             <div className={`${filter ? 'pt-8' : 'pt-16'} w-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4`}>
@@ -67,7 +75,7 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ max , filter }) => {
                         className="col-span-1 rounded-xl border border-gray-700 shadow dark:bg-gray-800/30 relative " >
                         <div className="m-auto p-4 mb-4">
                             <div className='w-90 h-70 aspect-[4/3] rounded-lg dark:shadow-lg dark:shadow-gray-800 border-1 dark:border-yonder-blue-300/10 
-                                bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/20 via-gray-500/20 to-black/5 flex items-center justify-center'> 
+                                dark:bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] dark:from-white/20 dark:via-gray-500/20 dark:to-black/5 flex items-center justify-center'> 
                             {
                                 project.images[0].type === 'video' 
                                 ? <video className="p-8  dark:drop-shadow-2xl " style={{objectFit:'cover'}} poster={project.images[0].alt} autoPlay muted loop >
@@ -78,7 +86,7 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ max , filter }) => {
                            </div>
                         </div>
                         <div className="text-center">
-                            <h3 className="p-8 text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">{project.title}</h3>
+                            <h3 className="p-8 text-2xl lg:text-3xl font-bold text-yonder-blue-600 dark:text-white">{project.title}</h3>
                         </div>
                         <div className="m-4 flex flex-wrap justify-center gap-2 items-center text-xs h-auto lg:h-[100px] xl:h-[110px]" >
                             {project.pills.map((pills: Pills, key: number) => (

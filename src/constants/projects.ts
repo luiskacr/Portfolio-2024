@@ -107,23 +107,23 @@ export const PROJECTS: Projects[] = [
       technical: 'tec_jungle',
       images: [
         {
-          url: './images/projects/jungle/jungle1.png',
+          url: './images/projects/jungle/jungle1.webp',
           alt: 'Login',
         },
         {
-          url: './images/projects/jungle/jungle2.png',
+          url: './images/projects/jungle/jungle2.webp',
           alt: 'Admin Panel',
         },
         {
-          url: './images/projects/jungle/jungle3.png',
+          url: './images/projects/jungle/jungle3.webp',
           alt: 'Tours Panel',
         },
         {
-          url: './images/projects/jungle/jungle4.png',
+          url: './images/projects/jungle/jungle4.webp',
           alt: 'Reports Panel',
         },
         {
-          url: './images/projects/jungle/jungle5.png',
+          url: './images/projects/jungle/jungle5.webp',
           alt: 'Invoice Panel',
         }
       ],
@@ -345,13 +345,37 @@ export const PROJECTS: Projects[] = [
     },
     {
       title: 'Sistema de Créditos',
-      description: '',
+      description: 'dec_credit',
       technical: '',
       images: [
         {
-          url: '',
+          url: './images/projects/credit/credit1.webp',
           alt: 'Login',
-        }
+        },
+        {
+          url: './images/projects/credit/credit2.webp',
+          alt: 'Home',
+        },
+        {
+          url: './images/projects/credit/credit3.webp',
+          alt: 'Credits',
+        },
+        {
+          url: './images/projects/credit/credit4.webp',
+          alt: 'Money Credit Change',
+        },
+        {
+          url: './images/projects/credit/credit5.webp',
+          alt: 'Payment View',
+        },
+        {
+          url: './images/projects/credit/credit6.webp',
+          alt: 'Payment History View',
+        },
+        {
+          url: './images/projects/credit/credit6.webp',
+          alt: 'Credit History View',
+        },
       ],
       pills: [
         {

@@ -9,8 +9,8 @@ export const NAVITEMS:NavItem[] = [
         label: "projects",
         url: "/projects",
     },
-    {
-        label: "contact",
-        url: "/contact",
-    },
+    // {
+    //     label: "contact",
+    //     url: "/contact",
+    // },
 ]

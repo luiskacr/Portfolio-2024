@@ -12,7 +12,6 @@ import { NavLink, useLocation } from 'react-router-dom';
 export  function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
-    console.log(location)
 
     function toggle() {
       setIsOpen((isOpen) => !isOpen);
@@ -20,7 +19,7 @@ export  function Header() {
 
     return( 
       <header>
-        <nav className="backdrop-brightness-100 backdrop-blur-sm fixed w-full z-20 top-0 start-0">
+        <nav className="bg-gray-200 shadow-lg dark:shadow-none dark:bg-transparent backdrop-brightness-100 backdrop-blur-sm fixed w-full z-20 top-0 start-0">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8">
             <a href="/" className="flex items-center space-x-3 " aria-label="Go to the Home">
               <span className="flex items-center justify-center text-3xl sm:text-6xl bold whitespace-nowrap dark:text-white">
@@ -50,11 +49,11 @@ export  function Header() {
                 {
                     NAVITEMS.map((navItem: NavItem) => (
                         <li key={navItem.label}>
-                            <NavLink to={navItem.url}
+                            <NavLink to={navItem.url} onClick={toggle}
                                 className={`block py-2 px-3 rounded text-gray-900 text-xl  md:hover:bg-transparent hover:bg-gray-100  hover:animate-pop
-                                md:hover:text-blue-700 md:p-0 md:dark:hover:text-yonder-blue-400 dark:text-white dark:hover:bg-gray-700
+                                md:p-0 md:hover:text-yonder-blue-400 dark:text-white dark:hover:bg-gray-700
                                  dark:hover:text-white md:dark:hover:bg-transparent
-                                 ${ location.pathname === navItem.url ? 'dark:border-b-4 dark:border-solid dark:text-yonder-blue-400 dark:border-yonder-blue-400/80' : '' }`}
+                                 ${ location.pathname === navItem.url ? 'border-b-4 border-solid text-yonder-blue-600 dark:text-yonder-blue-400 border-yonder-blue-600/80 dark:border-yonder-blue-400/80' : '' }`}
                               >
                                 <TranslateText text={navItem.label} />
                             </NavLink>
