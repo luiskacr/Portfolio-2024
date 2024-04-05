@@ -5,6 +5,7 @@ import { ImLinkedin } from "react-icons/im";
 import { MainButton } from "./MainButton";
 import { useTranslation } from "react-i18next";
 import { FaGithubSquare } from "react-icons/fa";
+import  openToWork  from "../assets/openToWork.webp";
 
 
 export const Hero = () => {
@@ -15,8 +16,8 @@ export const Hero = () => {
 
     const downloadPdf = () => {
         const pdfUrl =  currentLanguage === 'es' 
-            ? "./public/assets/CV_ES.pdf" 
-            : "./public/assets/CV_EN.pdf";
+            ? "./public/pdf/CV_ES.pdf" 
+            : "./public/pdf/CV_EN.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = t('file');
@@ -62,7 +63,7 @@ export const Hero = () => {
                 <div className="flex justify-center items-center order-1 lg:order-none m-auto">
                     <img className="m-4 rounded-full h-[300px] lg:h-[400px] xl:h-[400px] w-[300px] lg:w-[400px] xl:w-[400px]
                     shadow-lg shadow-gray-800 dark:border-2 dark:border-yonder-blue-300/10" 
-                    src='https://media.licdn.com/dms/image/D4E35AQHN9bTR1T3GFg/profile-framedphoto-shrink_400_400/0/1712287113747?e=1712894400&v=beta&t=_1idoJ302c6KkmpgUm-Ty7w_V8rpG87-WisbhdgwfKs' alt="avatar" />
+                    src={openToWork} alt="avatar" />
                 </div>
             </div>
         </div>
